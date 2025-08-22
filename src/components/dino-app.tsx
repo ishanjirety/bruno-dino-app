@@ -74,7 +74,7 @@ export default function DinoApp({
   }, [animations, dino]);
 
   useFrame((state, delta) => {
-    console.log(state);
+    console.log(state.clock.getElapsedTime());
     if (mixerRef.current) {
       mixerRef.current.update(delta);
     }
