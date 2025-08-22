@@ -74,6 +74,7 @@ export default function DinoApp({
   }, [animations, dino]);
 
   useFrame((state, delta) => {
+    console.log(state);
     if (mixerRef.current) {
       mixerRef.current.update(delta);
     }
